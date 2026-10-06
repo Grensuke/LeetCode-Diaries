@@ -22,8 +22,6 @@ public:
         return dp[i][j][sum] = max(x,y);
     }
     int maxPathScore(vector<vector<int>>& grid, int k) {
-        ios_base::sync_with_stdio(false);
-        cin.tie(NULL);
         m = grid.size();
         n = grid[0].size();
         memset(dp, -1, sizeof(dp));
