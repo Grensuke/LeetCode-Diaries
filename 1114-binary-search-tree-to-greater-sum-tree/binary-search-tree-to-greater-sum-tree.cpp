@@ -14,7 +14,6 @@ public:
     int sum = 0;
     TreeNode* bstToGst(TreeNode* root) {
         // Tatakae Tatakae!!
-        int sum = 0;
         dfs(root);
         return root;
     }
