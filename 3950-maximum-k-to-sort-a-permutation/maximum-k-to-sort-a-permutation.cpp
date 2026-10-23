@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int sortPermutation(vector<int>& nums) {
+        // Kage bunshin no jutsu
+        int ans = -1, n = nums.size();
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i) {
+                if (ans == -1) ans = nums[i];
+                else ans = (ans&nums[i]);
+            }
+        }
+        if (ans == -1) return 0;
+        return ans;
+    }
+};
