@@ -18,7 +18,6 @@ public:
         for (auto &i : s) arr.push_back(i);
         int temp = lower_bound(arr.begin(),arr.end(), 0) - arr.begin();
         add(temp);
-        cout << sz << endl;
         for (int i = 0; i < n; i++) {
             int f1 = upper_bound(arr.begin(),arr.end(), pre[i+1]-l) - arr.begin();
             int f2 = upper_bound(arr.begin(),arr.end(), pre[i+1]-u-1) - arr.begin();
