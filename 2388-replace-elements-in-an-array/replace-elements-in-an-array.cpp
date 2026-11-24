@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<int> arrayChange(vector<int>& nums, vector<vector<int>>& op) {
         // Thanks for saying that :)
-        map<int, int> mp;
+        unordered_map<int, int> mp;
         int n = nums.size();
         for(int i = 0; i < n; i++) mp[nums[i]] = i;
         for (int i = 0; i < op.size(); i++) {
